@@ -7,7 +7,7 @@ GNU/Linux (as well as most modern Unixes) knows two types of libraries, static (
 - dynamically with automatic loading,
 - dynamically with explicit loading.
 
-This tutorial explores these three possibilities in the following three sections.
+This tutorial explores these three possibilities.
 
 ---
 
