@@ -29,11 +29,11 @@ File Type: EXECUTABLE IMAGE
     KERNEL32.dll
 ...
 ```
-We can see that `Exe_StaticLoad.exe` depends only on 3 imports which are all in C:\Windows\SysWOW64\ thus deleting everthing  around the exe dosen't change the outcome of the program
+We can see that `Exe_StaticLib.exe` depends only on 3 imports which are all in C:\Windows\SysWOW64\ thus deleting everything  around the exe doesn't change the outcome of the program
 
 ## Exercise 3
 
-To seperate static and dynamic libs. We created a new project `DynamicLib` which will generate `DynamicLib.dll` with the same `PrintStop` function
+To separate static and dynamic libs. We created a new project `DynamicLib` which will generate `DynamicLib.dll` with the same `PrintStop` function
 
 ```powershell
 dumpbin /EXPORTS .\DynamicLib.dll
@@ -72,7 +72,7 @@ File Type: EXECUTABLE IMAGE
     KERNEL32.dll
 ...
 ```
-Thus we cannot run the program without `DynamicLib.dll`
+Thus, we cannot run the program without `DynamicLib.dll`
 
 ## Exercise 4
 There are several significant differences in the creation and use of libraries between the Linux and Windows operating systems, as well as some similarities.

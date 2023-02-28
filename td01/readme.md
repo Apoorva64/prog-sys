@@ -20,7 +20,7 @@ Then we record the start time.
 
 We call the sort function of the imported sort file (either bubble, insertion, merge or quick).
 
-Each sort file has the sort(int list[], int size) function that implements it's sort algorithm.
+Each sort file has the sort(int list[], int size) function that implements its sort algorithm.
 
 And at last we print the total time it took.
 
@@ -94,7 +94,7 @@ nm tri_bubble-basicExe.exe
 00000000000018f2 T foo
 ⋮
 ```
-But theses functions are not included when the library is linked statically.
+But these functions are not included when the library is linked statically.
 
 
 ## Exercise 5
@@ -117,7 +117,7 @@ libTri_%-dynamicLib.so: %.o unused.o
 CFLAGS=-Wall -Wextra -std=gnu99 -g -fpic
 ```
 
-Dont forget to add `export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH` to your env vars.
+Don't forget to add `export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH` to your env vars.
 
 ## Exercise 6
 
@@ -182,7 +182,7 @@ perf: all
 22592 Feb 28 10:30 tri_bubble-basicExe.exe
 24576 Feb 28 10:45 tri.exe
 ```
-We notice that tri.exe is bigger than tri_bubble-basicExe.exe this is because we import a lib that allows to do linkage at runtime. Indeed `tri_bubble-basicExe.exe` dosen't need thoses libraries as its libraries are linked at compile time.
+We notice that tri.exe is bigger than tri_bubble-basicExe.exe this is because we import a lib that allows to do linkage at runtime. Indeed `tri_bubble-basicExe.exe` doesn't need these libraries as its libraries are linked at compile time.
 
 By doing a nm diff between `tri` and `tri_bubble-basicExe.exe` we notice that dlerror, dlopen and dlsym have been loaded:
 ```
