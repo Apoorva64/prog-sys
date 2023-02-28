@@ -130,6 +130,7 @@ static void Scan_Args(int argc, char *argv[]) {
                 }
                 case 'p':
                     Perf = TRUE;
+                    break;
                 default:
                     fprintf(stderr, "Unexpected argument");
                     break;
